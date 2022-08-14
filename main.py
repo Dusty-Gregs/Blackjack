@@ -28,7 +28,8 @@ global dealer_score
 
 
 def deal(list,amount):
-    for i in range(amount):
+    """Adds random card from deck to list."""
+    for _ in range(amount):
         list.append(random.choice(cards))
 
 def over_limit(list,score):
